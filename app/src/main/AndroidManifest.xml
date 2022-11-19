@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clockwork_2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logov2"
+        android:label="Clockwork"
+        android:roundIcon="@drawable/logov2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".Sinch.SinchService"></service>
+        <activity
+            android:name=".Sinch.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Sinch.CallScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Sinch.IncomingCallScreenActivity" android:screenOrientation="portrait"
+            android:noHistory="true"/>
+        <activity android:name=".Sinch.PlaceCallActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".resetPassword"></activity>
+        <activity
+            android:name=".classDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addAppointmentStudent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addMessageStudent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addMessageTeacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addAppointment2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addAppointment"
+            android:parentActivityName=".landingPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addClassStudent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".addClassTeacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".landingPage"
+            android:label="@string/title_activity_landing_page_teacher"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".register"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".ReminderBroadcast" />
+    </application>
+
+</manifest>

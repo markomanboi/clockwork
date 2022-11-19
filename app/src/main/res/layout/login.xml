@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:padding="0dip"
+                tools:context=".Sinch.LoginActivity">
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@drawable/back"/>
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Is this your email?"
+                android:textAllCaps="true"
+            android:fontFamily="@font/patua_one"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryDark" android:textSize="20sp"/>
+        <EditText
+                android:id="@+id/loginName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/inputbox">
+
+            <requestFocus/>
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:text="YES"
+            android:minHeight="56dp"
+            android:minWidth="132dp"
+            android:textColor="@color/off_white"
+            android:textSize="22sp"
+            android:textStyle="bold" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Powered by Sinch"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

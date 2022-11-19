@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingBottom="15dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="This is the name of the student"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/patua_one"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+
+        />
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="This is the email of the student"
+        android:textSize="12dp"
+        android:layout_below="@id/txtName"
+        android:fontFamily="@font/patua_one"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="30dp"
+
+        />
+
+</RelativeLayout>

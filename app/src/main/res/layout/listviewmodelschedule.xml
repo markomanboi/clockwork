@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:paddingBottom="20dp"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/calendar_listview"
+        />
+
+    <TextView
+        android:id="@+id/txtClassName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView3"
+        android:text="This is the class name"
+        android:textSize="15dp"
+        android:fontFamily="@font/patua_one"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtClassTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView3"
+        android:text="This is the appointment schedule"
+        android:fontFamily="@font/patua_one"
+        android:layout_marginLeft="30dp"
+        android:textSize="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/txtClassName"
+        android:layout_marginTop="1dp"
+        />
+
+    <TextView
+        android:id="@+id/txtAppointee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView3"
+        android:text="This is the name of student"
+        android:fontFamily="@font/patua_one"
+        android:layout_marginLeft="30dp"
+        android:textSize="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/txtClassTime"
+        android:layout_marginTop="1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="220dp"
+        android:layout_toRightOf="@id/imageView3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/btnResched"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/resched" />
+
+        <ImageView
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/check" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/imageView3"
+        android:textSize="10dp"
+        android:fontFamily="@font/patua_one"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="230dp"
+        android:layout_height="wrap_content"
+        android:text="Pending..." />
+</RelativeLayout>

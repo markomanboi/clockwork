@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFDD78">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout10">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/smooth_button"
+            android:fontFamily="@font/patua_one"
+            android:text="LOGIN"
+            android:textColor="#1A1A1A"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textfirsttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="First time User?"
+            android:textColor="#1A1A1A" />
+
+        <TextView
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/patua_one"
+            android:text="Sign Up Here"
+            android:textColor="#1A1A1A" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout9">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/patua_one"
+            android:text="Welcome to \nClockwork"
+            android:textColor="#1A1A1A"
+            android:textSize="36dp" />
+
+        <RelativeLayout
+            android:id="@+id/relala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email_text_box"
+                android:layout_width="360dp"
+                android:layout_height="52dp"
+                android:background="@drawable/circle_textbox"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="7dp"
+                android:drawableTint="#1A1A1A"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dip" />
+
+            <EditText
+                android:id="@+id/password_textbox"
+                android:layout_width="360dp"
+                android:layout_height="52dp"
+                android:layout_below="@id/email_text_box"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle_textbox"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:drawablePadding="7dp"
+                android:drawableTint="#1A1A1A"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="16dip" />
+
+            <TextView
+                android:id="@+id/btnForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_textbox"
+                android:layout_alignLeft="@id/password_textbox"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/patua_one"
+                android:text="Forgot Password?"
+                android:textColor="#1A1A1A" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout9"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/logov2" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

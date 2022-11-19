@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311898261468",
+    "firebase_url": "https://clockwork-ab01c.firebaseio.com",
+    "project_id": "clockwork-ab01c",
+    "storage_bucket": "clockwork-ab01c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311898261468:android:76fc1050347ddb815ff119",
+        "android_client_info": {
+          "package_name": "com.example.clockwork_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311898261468-4rvp1spl2qumebc6k7nnbftguvp3m5c9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clockwork_2",
+            "certificate_hash": "3655e0d3350b40f80e216bae3947e39007ecb247"
+          }
+        },
+        {
+          "client_id": "311898261468-kdm8c6fi7mfd2p0i7bjj5ou610g7v5cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3RiEAcirfF7aZY1DMX6mmZTC2yx67cq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311898261468-kdm8c6fi7mfd2p0i7bjj5ou610g7v5cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

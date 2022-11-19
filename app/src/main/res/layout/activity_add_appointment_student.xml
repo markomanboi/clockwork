@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addAppointmentStudent"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/btnNextPageAppointment"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/calendarSetAppointment"
+        app:layout_constraintStart_toStartOf="@+id/calendarSetAppointment"
+        app:layout_constraintTop_toBottomOf="@+id/calendarSetAppointment" />
+
+    <ImageView
+        android:id="@+id/btnImageNextPageAppointment"
+        android:layout_width="63dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNextPageAppointment"
+        app:layout_constraintEnd_toEndOf="@+id/btnNextPageAppointment"
+        app:layout_constraintStart_toStartOf="@+id/btnNextPageAppointment"
+        app:layout_constraintTop_toTopOf="@+id/btnNextPageAppointment"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set new appointment"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="330dp"
+            android:layout_height="49dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/spinner_border"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <Spinner
+            android:id="@+id/spinnerStudent"
+            android:layout_width="330dp"
+            android:layout_height="49dp" />
+    </RelativeLayout>
+
+    <CalendarView
+        android:id="@+id/calendarSetAppointment"
+        android:layout_width="411dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/patua_one"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
